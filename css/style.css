@@ -109,9 +109,6 @@ main {
 	padding: 60px 60px;
 }
 
-.section_info h2.header {
-    margin-top: 10px;
-}
 h2.header {
     font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 2.5em;
@@ -173,7 +170,7 @@ h2.header {
 .profile-image{
     max-width: 200px; 
     margin-right: 20px;
-    margin-top: 20px;
+    flex-shrink: 0;
 }
 
 .profile-image img{
@@ -182,6 +179,28 @@ h2.header {
     border-radius: 50%;
 }
 
+.row-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.text-content{
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .row-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image,
+    .text-content {
+        margin-right: 0;
+    }
+}
 
 
 
