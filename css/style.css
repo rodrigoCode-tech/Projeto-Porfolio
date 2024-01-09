@@ -202,6 +202,27 @@ h2.header {
     }
 }
 
+.technologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.technology {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;;
+}
+
+.tech-icon {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff; /* Ajuste conforme necessário */
+}
+
 
 
 
